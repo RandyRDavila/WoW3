@@ -1,22 +1,72 @@
-site_name: Written on the Wall III
+
+site_name: Written on the Wall III (WoW3)
+
 theme:
   name: material
   features:
-    - navigation.tabs
-    - navigation.top
-    - content.code.copy
+    - navigation.tabs         # optional: top nav tabs
+    - navigation.sections     # ✅ required for nested sidebar sections
+    - toc.integrate           # ✅ required to put h3s under each h2 in sidebar
+    - content.code.copy       # nice-to-have
+  palette:
+    - scheme: default
+      primary: deep purple   # or blue, indigo, teal, etc.
+      accent: amber          # or lime, pink, cyan, etc.
+    - scheme: slate          # dark mode
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  font:
+    text: Roboto
+    code: Fira Code
+
 markdown_extensions:
   - toc:
       permalink: true
+  - footnotes                # ✅ add this
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences
   - pymdownx.highlight
+
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
+  - js/math.js
+
 extra_css:
-  - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  - extra.css
+
 nav:
   - Home: index.md
-  - Conjectures:
-      - 001: conjectures/001-independence-vs-residue.md
+  - About: about.md
+  - Graph Theory:
+      - Necessary Conjectures:
+          - Conjecture GT.1: graph-theory/gt1.md
+          - Conjecture GT.2: graph-theory/gt2.md
+          - Conjecture GT.3: graph-theory/gt3.md
+          - Conjecture GT.4: graph-theory/gt4.md
+          - Conjecture GT.5: graph-theory/gt5.md
+          - Conjecture GT.6: graph-theory/gt6.md
+          - Conjecture GT.7: graph-theory/gt7.md
+          - Conjecture GT.8: graph-theory/gt8.md
+          - Conjecture GT.9: graph-theory/gt9.md
+          - Conjecture GT.10: graph-theory/gt10.md
+  - Geometry:
+      - Conjecture GE.1: geometry/001-dihedral-bound.md
+  - Number Theory:
+      - Conjecture NT.1: number-theory/nt1.md
+      - Conjecture NT.2: number-theory/nt2.md
+      - Conjecture NT.3: number-theory/nt3.md
+  - String Theory:
+      - Conjecture ST.1: string-theory/st1.md
+      - Conjecture ST.2: string-theory/st2.md
+      - Conjecture ST.3: string-theory/st3.md
+      - Conjecture ST.4: string-theory/st4.md
+      - Conjecture ST.5: string-theory/st5.md
+      - Conjecture ST.6: string-theory/st6.md
+  - Publications: publications.md
+

@@ -1,0 +1,21 @@
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    font-size: 0.75em;
+    border-radius: 0.3em;
+    font-weight: 600;
+    color: white;
+    margin-left: 0.5em;
+}
+
+.status-open {
+    background-color: #e53935;
+}
+
+.status-resolved {
+    background-color: #43a047;
+}
+
+.status-refuted {
+    background-color: #f9a825;
+}

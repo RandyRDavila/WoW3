@@ -22,7 +22,7 @@ and this bound is sharp.
 ```lean
 theorem (G : SimpleGraph V)
   (h1 : connected G) :
-  independent_domination_number G <= harmonic_index G :=
+  min_maximal_matching_number G <= harmonic_index G :=
 sorry
 ```
 

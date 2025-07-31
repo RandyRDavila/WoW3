@@ -1354,7 +1354,7 @@
 <h2 id="statement">Statement<a class="headerlink" href="#statement" title="Permanent link">&para;</a></h2>
 <p><strong>Conjecture.</strong> If <span class="arithmatex">\(G\)</span> is a non-trivial graph, then
 $$
-\mu^*(G) \geq H(G),
+\mu^*(G) \leq H(G),
 $$
 and this bound is sharp.</p>
 <blockquote>
@@ -1364,7 +1364,7 @@ and this bound is sharp.</p>
 <h2 id="lean4-theorem">Lean4 Theorem<a class="headerlink" href="#lean4-theorem" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kd">theorem</span><span class="w"> </span><span class="o">(</span><span class="n">G</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">SimpleGraph</span><span class="w"> </span><span class="n">V</span><span class="o">)</span>
 <span class="w">  </span><span class="o">(</span><span class="n">h1</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">connected</span><span class="w"> </span><span class="n">G</span><span class="o">)</span><span class="w"> </span><span class="o">:</span>
-<span class="w">  </span><span class="n">independent_domination_number</span><span class="w"> </span><span class="n">G</span><span class="w"> </span><span class="bp">&lt;=</span><span class="w"> </span><span class="n">min_maximal_matching</span><span class="w"> </span><span class="n">G</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">independent_domination_number</span><span class="w"> </span><span class="n">G</span><span class="w"> </span><span class="bp">&lt;=</span><span class="w"> </span><span class="n">harmonic_index</span><span class="w"> </span><span class="n">G</span><span class="w"> </span><span class="o">:=</span>
 <span class="gr">sorry</span>
 </code></pre></div>
 <h2 id="definitions">Definitions<a class="headerlink" href="#definitions" title="Permanent link">&para;</a></h2>

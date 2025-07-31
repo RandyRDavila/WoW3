@@ -9,7 +9,7 @@ status: open
 
 **Conjecture.** If $G$ is a non-trivial graph, then
 $$
-\mu^*(G) \geq H(G),
+\mu^*(G) \leq H(G),
 $$
 and this bound is sharp.
 
@@ -22,7 +22,7 @@ and this bound is sharp.
 ```lean
 theorem (G : SimpleGraph V)
   (h1 : connected G) :
-  independent_domination_number G <= min_maximal_matching G :=
+  independent_domination_number G <= harmonic_index G :=
 sorry
 ```
 

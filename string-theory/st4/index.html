@@ -12,7 +12,7 @@
         <link rel="prev" href="../st3/">
       
       
-        <link rel="next" href="../st5/">
+        <link rel="next" href="../../publications/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#conjecture-st4-mirror-symmetry-implies-moduli-density-lower-bound" class="md-skip">
+        <a href="#conjecture-st4-sparsity-implies-lower-bound-on-euler-density" class="md-skip">
           Skip to content
         </a>
       
@@ -263,26 +263,6 @@
     
   
 
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../geometry/001-dihedral-bound/" class="md-tabs__link">
-          
-  
-  
-  Geometry
-
-        </a>
-      </li>
     
   
 
@@ -856,7 +836,7 @@
   
   
   <span class="md-ellipsis">
-    Geometry
+    Number Theory
     
   </span>
   
@@ -866,79 +846,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Geometry
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geometry/001-dihedral-bound/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Conjecture GE.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Number Theory
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Number Theory
           </label>
@@ -1045,10 +952,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -1061,8 +968,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             String Theory
           </label>
@@ -1170,52 +1077,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../st5/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Conjecture ST.5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../st6/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Conjecture ST.6
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1261,25 +1122,31 @@
 
 
 
-<h1 id="conjecture-st4-mirror-symmetry-implies-moduli-density-lower-bound">Conjecture ST.4 — Mirror Symmetry Implies Moduli Density Lower Bound<a class="headerlink" href="#conjecture-st4-mirror-symmetry-implies-moduli-density-lower-bound" title="Permanent link">&para;</a></h1>
+<h1 id="conjecture-st4-sparsity-implies-lower-bound-on-euler-density">Conjecture ST.4 — Sparsity Implies Lower Bound on Euler Density<a class="headerlink" href="#conjecture-st4-sparsity-implies-lower-bound-on-euler-density" title="Permanent link">&para;</a></h1>
 <p><strong>Statement.</strong>
-If a Calabi–Yau threefold is mirror symmetric, then:
-$$
-\text{moduli_density} \geq \frac{1}{32} \cdot (h^{1,1} + h^{2,1})
-$$</p>
+If the configuration matrix is sparse, then</p>
+<div class="arithmatex">\[
+\chi_{\text{density}} \geq \frac{24}{5} \cdot \Big(1 - \frac{p \cdot a}{k}\Big) - \frac{16}{5},
+\]</div>
+<p>and this bound is sharp.</p>
 <p><strong>Definitions.</strong></p>
 <ul>
-<li><span class="arithmatex">\( h^{1,1} \)</span>, <span class="arithmatex">\( h^{2,1} \)</span>: Hodge numbers of the manifold.</li>
-<li><code>h_sum</code>: The total number of moduli, <span class="arithmatex">\( h^{1,1} + h^{2,1} \)</span>.</li>
-<li><code>moduli_density</code>: The number of moduli per unit of algebraic complexity, defined as:
-  [
-  \text{moduli_density} = \frac{h^{1,1} + h^{2,1}}{\text{config_sum}}
-  ]</li>
-<li><code>config_sum</code>: The total sum of entries in the configuration matrix.</li>
-<li><code>is_mirror_symmetric</code>: True if <span class="arithmatex">\( h^{1,1} = h^{2,1} \)</span></li>
+<li><span class="arithmatex">\( \chi \)</span>: Euler characteristic of the Calabi–Yau threefold, defined as <span class="arithmatex">\( \chi = 2(h^{1,1} - h^{2,1}) \)</span>.</li>
+<li>
+<p><span class="arithmatex">\( \chi_{\text{density}} \)</span>: Euler density, computed as <span class="arithmatex">\( \chi_{\text{density}} = \chi / \text{config\_sum} \)</span>, where config_sum is the total sum of the configuration matrix entries.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(p\)</span>: the number of defining polynomials (codimension),</p>
+</li>
+<li>
+<p><span class="arithmatex">\(a\)</span>: the ambient dimension of the configuration matrix (i.e., number of rows),</p>
+</li>
+<li>
+<p><span class="arithmatex">\(k\)</span>: the number of nonzero entries in the configuration matrix.</p>
+</li>
 </ul>
 <p><strong>Interpretation.</strong>
-This conjecture implies that mirror symmetry enforces a minimum density of moduli per unit configuration complexity. That is, symmetric moduli spaces cannot be too “compressed” relative to the algebraic data defining them.</p>
+This conjecture relates topological data (<span class="arithmatex">\( \chi \)</span>) to the algebraic sparsity of the defining configuration. It asserts that a sparse polynomial description of the manifold forces the Euler characteristic, scaled by matrix complexity, to remain above a threshold — signaling a kind of minimal topological complexity in sparse embeddings.</p>
 <p><strong>Discovered by:</strong> <em>TxGraffiti (Vibrations mode)</em></p>
 
 

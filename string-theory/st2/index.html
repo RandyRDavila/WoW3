@@ -275,26 +275,6 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../geometry/001-dihedral-bound/" class="md-tabs__link">
-          
-  
-  
-  Geometry
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
         <a href="../../number-theory/nt1/" class="md-tabs__link">
           
   
@@ -856,7 +836,7 @@
   
   
   <span class="md-ellipsis">
-    Geometry
+    Number Theory
     
   </span>
   
@@ -866,79 +846,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Geometry
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geometry/001-dihedral-bound/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Conjecture GE.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Number Theory
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Number Theory
           </label>
@@ -1045,10 +952,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -1061,8 +968,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             String Theory
           </label>
@@ -1170,52 +1077,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../st5/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Conjecture ST.5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../st6/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Conjecture ST.6
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1262,19 +1123,24 @@
 
 
 <h1 id="conjecture-st2-mirror-symmetry-bound-via-chi_density">Conjecture ST.2 — Mirror Symmetry Bound via chi_density<a class="headerlink" href="#conjecture-st2-mirror-symmetry-bound-via-chi_density" title="Permanent link">&para;</a></h1>
-<p><strong>Statement.</strong>
-Let <span class="arithmatex">\( \chi_{\text{density}} = \chi / \text{config\_sum} \)</span>. Then:</p>
-<blockquote>
-<p>If <span class="arithmatex">\( \chi_{\text{density}} &gt; \frac{1}{50} h^{1,1} \cdot h^{2,1} - \frac{229}{50} \)</span>,
-then the manifold is <strong>mirror symmetric</strong> (i.e., <span class="arithmatex">\( h^{1,1} = h^{2,1} \)</span>).</p>
-</blockquote>
+<p><strong>Statement.</strong></p>
+<p>If <span class="arithmatex">\(\chi_{\text{density}} &gt; \frac{1}{50} h^{1,1} \cdot h^{2,1} - \frac{229}{50}\)</span>, then the manifold is <strong>mirror symmetric</strong>, (i.e., <span class="arithmatex">\( h^{1,1} = h^{2,1} \)</span>).</p>
 <p><strong>Interpretation.</strong>
 This inequality links a <em>density-normalized topological invariant</em> to a <em>symmetry property of the moduli space</em>. It identifies mirror symmetry through a nonlinear interaction term <span class="arithmatex">\( h^{1,1} \cdot h^{2,1} \)</span>.</p>
 <p><strong>Variables.</strong></p>
 <ul>
-<li><code>chi_density</code>: Euler characteristic divided by configuration matrix sum</li>
-<li><code>h_product</code>: <span class="arithmatex">\( h^{1,1} \cdot h^{2,1} \)</span></li>
-<li><code>is_mirror_symmetric</code>: True if <span class="arithmatex">\( h^{1,1} = h^{2,1} \)</span></li>
+<li>
+<p><span class="arithmatex">\(C\)</span> denotes the configuration matrix.</p>
+</li>
+<li>
+<p><span class="arithmatex">\( \chi \)</span>: Euler characteristic of the Calabi–Yau threefold, defined as <span class="arithmatex">\( \chi = 2(h^{1,1} - h^{2,1}) \)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\( \chi_{\text{density}} \)</span>: Euler density, computed as <span class="arithmatex">\( \chi_{\text{density}} = \chi / \text{config\_sum} \)</span>, where config_sum is the total sum of the configuration matrix entries.</p>
+</li>
+<li>
+<p><span class="arithmatex">\( h^{1,1} \)</span>, <span class="arithmatex">\( h^{2,1} \)</span>: Hodge numbers of the Calabi–Yau threefold, representing the dimensions of the Kähler and complex structure moduli spaces, respectively.</p>
+</li>
 </ul>
 <p><strong>Discovered by:</strong> <em>TxGraffiti (Vibrations mode)</em></p>
 

@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#conjecture-st3-moduli-density-implies-sparse-geometry" class="md-skip">
+        <a href="#conjecture-st3-moduli-density-and-sparse-geometry" class="md-skip">
           Skip to content
         </a>
       
@@ -263,26 +263,6 @@
     
   
 
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../geometry/001-dihedral-bound/" class="md-tabs__link">
-          
-  
-  
-  Geometry
-
-        </a>
-      </li>
     
   
 
@@ -856,7 +836,7 @@
   
   
   <span class="md-ellipsis">
-    Geometry
+    Number Theory
     
   </span>
   
@@ -866,79 +846,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Geometry
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geometry/001-dihedral-bound/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Conjecture GE.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Number Theory
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Number Theory
           </label>
@@ -1045,10 +952,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -1061,8 +968,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             String Theory
           </label>
@@ -1170,52 +1077,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../st5/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Conjecture ST.5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../st6/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Conjecture ST.6
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1261,21 +1122,19 @@
 
 
 
-<h1 id="conjecture-st3-moduli-density-implies-sparse-geometry">Conjecture ST.3 — Moduli Density Implies Sparse Geometry<a class="headerlink" href="#conjecture-st3-moduli-density-implies-sparse-geometry" title="Permanent link">&para;</a></h1>
+<h1 id="conjecture-st3-moduli-density-and-sparse-geometry">Conjecture ST.3 — Moduli Density and Sparse Geometry<a class="headerlink" href="#conjecture-st3-moduli-density-and-sparse-geometry" title="Permanent link">&para;</a></h1>
 <p><strong>Statement.</strong>
-Let <span class="arithmatex">\( \text{moduli\_density} = \frac{h^{1,1} + h^{2,1}}{\text{config\_sum}} \)</span>. Then:</p>
-<blockquote>
-<p>If the configuration is sparse,
-then <span class="arithmatex">\( \text{moduli\_density} \geq \frac{13}{42} \cdot \text{config\_sum} - \frac{197}{42} \)</span></p>
-</blockquote>
+If the configuration matrix is sparse, then</p>
+<div class="arithmatex">\[
+h^{1,1} + h^{2,1} \geq \frac{13}{42} \cdot (\sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} c_{ij})^2 - \frac{197}{42} \cdot \sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} c_{ij},
+\]</div>
+<p>and this bound is sharp.</p>
+<p><strong>Definitions.</strong></p>
+<ul>
+<li><span class="arithmatex">\( h^{1,1} \)</span>, <span class="arithmatex">\( h^{2,1} \)</span>: Hodge numbers of the Calabi–Yau threefold, representing the dimensions of the Kähler and complex structure moduli spaces, respectively.</li>
+</ul>
 <p><strong>Interpretation.</strong>
 Sparse configuration matrices imply that the normalized count of moduli exceeds a lower linear bound. This relates algebraic sparsity to the geometry of the moduli space.</p>
-<p><strong>Variables.</strong></p>
-<ul>
-<li><code>is_sparse_config</code>: Sparse matrix structure</li>
-<li><code>moduli_density</code>: Normalized moduli-to-complexity ratio</li>
-<li><code>config_sum</code>: Sum of entries in the configuration matrix</li>
-</ul>
 <p><strong>Discovered by:</strong> <em>TxGraffiti (Vibrations mode)</em></p>
 
 

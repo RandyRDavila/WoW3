@@ -55,8 +55,6 @@ nav:
           - Conjecture GT.8: graph-theory/gt8.md
           - Conjecture GT.9: graph-theory/gt9.md
           - Conjecture GT.10: graph-theory/gt10.md
-  - Geometry:
-      - Conjecture GE.1: geometry/001-dihedral-bound.md
   - Number Theory:
       - Conjecture NT.1: number-theory/nt1.md
       - Conjecture NT.2: number-theory/nt2.md
@@ -66,7 +64,5 @@ nav:
       - Conjecture ST.2: string-theory/st2.md
       - Conjecture ST.3: string-theory/st3.md
       - Conjecture ST.4: string-theory/st4.md
-      - Conjecture ST.5: string-theory/st5.md
-      - Conjecture ST.6: string-theory/st6.md
   - Publications: publications.md
 

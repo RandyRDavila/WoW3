@@ -1,0 +1,21 @@
+# Conjecture ST.7 — Rank Bounds on Hodge Difference
+
+**Statement.**
+If a Calabi–Yau threefold is a valid manifold, then the Hodge number difference satisfies:
+
+$$
+h^{1,1} - h^{2,1} \geq 2 \cdot \mathrm{rank}(C) - 18
+$$
+
+**Definitions.**
+
+- \( h^{1,1} \), \( h^{2,1} \): Hodge numbers of the manifold.
+- \( h_{\text{diff}} = h^{1,1} - h^{2,1} \): The Hodge number difference.
+- \( C \): The configuration matrix.
+- \( \mathrm{rank}(C) \): The rank of the configuration matrix.
+- `manifold`: True if the configuration corresponds to a valid Calabi–Yau threefold.
+
+**Interpretation.**
+This conjecture links the structural rank of the configuration matrix to the imbalance between Kähler and complex structure moduli. It suggests that more complex embeddings (higher rank) demand a minimum Hodge number spread.
+
+**Discovered by:** *TxGraffiti (Vibrations mode)*

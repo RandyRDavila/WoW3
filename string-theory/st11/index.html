@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../number-theory/nt3/">
+        <link rel="prev" href="../st10/">
       
       
-        <link rel="next" href="../st2/">
+        <link rel="next" href="../st12/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Conjecture ST.1 - Written on the Wall III (WoW3)</title>
+        <title>Conjecture ST.11 - Written on the Wall III (WoW3)</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#conjecture-st1-hodge-ratio-bound-predicts-sparse-configurations" class="md-skip">
+        <a href="#conjecture-st11-low-moduli-density-implies-mirror-symmetry" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Conjecture ST.1
+              Conjecture ST.11
             
           </span>
         </div>
@@ -297,7 +297,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../st1/" class="md-tabs__link">
           
   
   
@@ -979,19 +979,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../st1/" class="md-nav__link">
         
   
   
@@ -1002,7 +993,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1219,10 +1209,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../st11/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1233,6 +1232,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1352,16 +1352,33 @@
 
 
 
-<h1 id="conjecture-st1-hodge-ratio-bound-predicts-sparse-configurations">Conjecture ST.1 — Hodge Ratio Bound Predicts Sparse Configurations<a class="headerlink" href="#conjecture-st1-hodge-ratio-bound-predicts-sparse-configurations" title="Permanent link">&para;</a></h1>
+<h1 id="conjecture-st11-low-moduli-density-implies-mirror-symmetry">Conjecture ST.11 — Low Moduli Density Implies Mirror Symmetry<a class="headerlink" href="#conjecture-st11-low-moduli-density-implies-mirror-symmetry" title="Permanent link">&para;</a></h1>
 <p><strong>Statement.</strong>
-If the ratio of Hodge numbers satisfies <span class="arithmatex">\(\frac{h^{2,1}}{h^{1,1}} &lt; \frac{38}{11} \cdot \max_{i,j} c_{ij}\)</span>, then the <strong>configuration matrix is sparse</strong>.</p>
+If a Calabi–Yau threefold has sufficiently low moduli density, then it is mirror symmetric. Specifically:</p>
+<div class="arithmatex">\[
+\frac{h^{1,1} + h^{2,1}}{\sum_{i=1}^{m} \sum_{j=1}^{n} c_{ij}} &lt; \frac{9}{8} \cdot h^{1,1} - 15
+\quad \Longrightarrow \quad \text{manifold is mirror symmetric}
+\]</div>
 <p><strong>Definitions.</strong></p>
 <ul>
-<li><span class="arithmatex">\( h^{1,1} \)</span>, <span class="arithmatex">\( h^{2,1} \)</span>: Hodge numbers of the Calabi–Yau threefold, representing the dimensions of the Kähler and complex structure moduli spaces, respectively.</li>
-<li><span class="arithmatex">\( \max_{i,j} c_{ij} \)</span>: The largest entry in the configuration matrix <span class="arithmatex">\( C = [c_{ij}] \)</span>, which encodes the defining polynomials of the complete intersection Calabi–Yau (CICY) manifold.</li>
+<li><span class="arithmatex">\( h^{1,1} \)</span>, <span class="arithmatex">\( h^{2,1} \)</span>: Hodge numbers of the Calabi–Yau manifold.</li>
+<li><code>moduli_density</code>: Total number of deformation moduli per unit configuration size, defined as:</li>
+</ul>
+<div class="arithmatex">\[
+\text{moduli\_density} = \frac{h^{1,1} + h^{2,1}}{\text{config\_sum}}, \quad \text{where } \text{config\_sum} = \sum_{i=1}^{m} \sum_{j=1}^{n} c_{ij}
+\]</div>
+<ul>
+<li><span class="arithmatex">\( c_{ij} \)</span>: Entry of the configuration matrix defining the complete intersection.</li>
+<li><code>is_mirror_symmetric</code>: True if the manifold is known to be self-mirror or has a verified mirror pair.</li>
 </ul>
 <p><strong>Interpretation.</strong>
-This conjecture posits a nonlinear relationship between geometric complexity and topological asymmetry. When the Hodge structure is unbalanced in favor of complex structure moduli, but this imbalance is not too large relative to the maximum polynomial degree, the defining data tends to be sparse. This reflects a possible geometric signal for detecting algebraically minimal embeddings.</p>
+This conjecture proposes that Calabi–Yau manifolds with low moduli density relative to their number of Kähler parameters tend to be mirror symmetric. Intuitively, this hints that symmetry in moduli space may be favored when the embedding is compact (i.e., has a small configuration sum) and <span class="arithmatex">\( h^{1,1} \)</span> dominates.</p>
+<p><strong>Why it matters.</strong></p>
+<ul>
+<li>Provides a <strong>numerical criterion</strong> to detect mirror symmetry.</li>
+<li>May help identify mirror pairs or self-mirror manifolds in large CICY datasets.</li>
+<li>Bridges <strong>combinatorial embedding data</strong> with <strong>deep geometric symmetry</strong>.</li>
+</ul>
 <p><strong>Discovered by:</strong> <em>TxGraffiti (Vibrations mode)</em></p>
 
 

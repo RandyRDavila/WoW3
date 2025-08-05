@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../number-theory/nt3/">
+        <link rel="prev" href="../st5/">
       
       
-        <link rel="next" href="../st2/">
+        <link rel="next" href="../st7/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Conjecture ST.1 - Written on the Wall III (WoW3)</title>
+        <title>Conjecture ST.6 - Written on the Wall III (WoW3)</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#conjecture-st1-hodge-ratio-bound-predicts-sparse-configurations" class="md-skip">
+        <a href="#conjecture-st6-manifold-geometries-require-multiple-projective-factors" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Conjecture ST.1
+              Conjecture ST.6
             
           </span>
         </div>
@@ -297,7 +297,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../st1/" class="md-tabs__link">
           
   
   
@@ -979,19 +979,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../st1/" class="md-nav__link">
         
   
   
@@ -1002,7 +993,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1104,10 +1094,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../st6/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1118,6 +1117,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1352,16 +1352,20 @@
 
 
 
-<h1 id="conjecture-st1-hodge-ratio-bound-predicts-sparse-configurations">Conjecture ST.1 — Hodge Ratio Bound Predicts Sparse Configurations<a class="headerlink" href="#conjecture-st1-hodge-ratio-bound-predicts-sparse-configurations" title="Permanent link">&para;</a></h1>
+<h1 id="conjecture-st6-manifold-geometries-require-multiple-projective-factors">Conjecture ST.6 — Manifold Geometries Require Multiple Projective Factors<a class="headerlink" href="#conjecture-st6-manifold-geometries-require-multiple-projective-factors" title="Permanent link">&para;</a></h1>
 <p><strong>Statement.</strong>
-If the ratio of Hodge numbers satisfies <span class="arithmatex">\(\frac{h^{2,1}}{h^{1,1}} &lt; \frac{38}{11} \cdot \max_{i,j} c_{ij}\)</span>, then the <strong>configuration matrix is sparse</strong>.</p>
+If a Calabi–Yau manifold lies at a conifold point in the moduli space, then the maximum entry in its configuration matrix satisfies the inequality:</p>
+<div class="arithmatex">\[
+\max_{i,j}c_{ij}\geq \frac{1}{9} \cdot n
+\]</div>
 <p><strong>Definitions.</strong></p>
 <ul>
-<li><span class="arithmatex">\( h^{1,1} \)</span>, <span class="arithmatex">\( h^{2,1} \)</span>: Hodge numbers of the Calabi–Yau threefold, representing the dimensions of the Kähler and complex structure moduli spaces, respectively.</li>
-<li><span class="arithmatex">\( \max_{i,j} c_{ij} \)</span>: The largest entry in the configuration matrix <span class="arithmatex">\( C = [c_{ij}] \)</span>, which encodes the defining polynomials of the complete intersection Calabi–Yau (CICY) manifold.</li>
+<li><code>max_entry</code>: The largest integer <span class="arithmatex">\( c_{ij} \)</span> appearing in the configuration matrix of the Calabi–Yau.</li>
+<li><span class="arithmatex">\( n \)</span>: The number of ambient projective space factors (i.e., the number of columns in <span class="arithmatex">\( C \)</span>).</li>
+<li><code>is_conifold_point</code>: True if the configuration corresponds to a known conifold transition in the CICY landscape.</li>
 </ul>
 <p><strong>Interpretation.</strong>
-This conjecture posits a nonlinear relationship between geometric complexity and topological asymmetry. When the Hodge structure is unbalanced in favor of complex structure moduli, but this imbalance is not too large relative to the maximum polynomial degree, the defining data tends to be sparse. This reflects a possible geometric signal for detecting algebraically minimal embeddings.</p>
+This inequality suggests that Calabi–Yau threefolds near conifold transitions require a certain amount of local structural complexity — reflected in higher individual matrix entries — as the number of ambient projective factors increases. It implies a geometric cost to embedding singularities of this kind in lower-dimensional or simpler ambient spaces.</p>
 <p><strong>Discovered by:</strong> <em>TxGraffiti (Vibrations mode)</em></p>
 
 

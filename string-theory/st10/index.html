@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../number-theory/nt3/">
+        <link rel="prev" href="../st9/">
       
       
-        <link rel="next" href="../st2/">
+        <link rel="next" href="../st11/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Conjecture ST.1 - Written on the Wall III (WoW3)</title>
+        <title>Conjecture ST.10 - Written on the Wall III (WoW3)</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#conjecture-st1-hodge-ratio-bound-predicts-sparse-configurations" class="md-skip">
+        <a href="#conjecture-st10-chi-density-implies-codimension-dependent-lower-bound" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Conjecture ST.1
+              Conjecture ST.10
             
           </span>
         </div>
@@ -297,7 +297,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../st1/" class="md-tabs__link">
           
   
   
@@ -979,19 +979,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../st1/" class="md-nav__link">
         
   
   
@@ -1002,7 +993,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1196,10 +1186,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../st10/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1210,6 +1209,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1352,16 +1352,33 @@
 
 
 
-<h1 id="conjecture-st1-hodge-ratio-bound-predicts-sparse-configurations">Conjecture ST.1 — Hodge Ratio Bound Predicts Sparse Configurations<a class="headerlink" href="#conjecture-st1-hodge-ratio-bound-predicts-sparse-configurations" title="Permanent link">&para;</a></h1>
+<h1 id="conjecture-st10-chi-density-implies-codimension-dependent-lower-bound">Conjecture ST.10 — Chi Density Implies Codimension-Dependent Lower Bound<a class="headerlink" href="#conjecture-st10-chi-density-implies-codimension-dependent-lower-bound" title="Permanent link">&para;</a></h1>
 <p><strong>Statement.</strong>
-If the ratio of Hodge numbers satisfies <span class="arithmatex">\(\frac{h^{2,1}}{h^{1,1}} &lt; \frac{38}{11} \cdot \max_{i,j} c_{ij}\)</span>, then the <strong>configuration matrix is sparse</strong>.</p>
+For any Calabi–Yau manifold:</p>
+<div class="arithmatex">\[
+\left( \frac{\chi}{\sum_{i=1}^{m} \sum_{j=1}^{n} c_{ij}} \right)^2 \geq \frac{1}{300} \cdot \text{codim} - \frac{1}{50}
+\]</div>
 <p><strong>Definitions.</strong></p>
 <ul>
-<li><span class="arithmatex">\( h^{1,1} \)</span>, <span class="arithmatex">\( h^{2,1} \)</span>: Hodge numbers of the Calabi–Yau threefold, representing the dimensions of the Kähler and complex structure moduli spaces, respectively.</li>
-<li><span class="arithmatex">\( \max_{i,j} c_{ij} \)</span>: The largest entry in the configuration matrix <span class="arithmatex">\( C = [c_{ij}] \)</span>, which encodes the defining polynomials of the complete intersection Calabi–Yau (CICY) manifold.</li>
+<li><span class="arithmatex">\( \chi_{\text{density}} \)</span>: Euler characteristic per unit configuration size, defined as:</li>
 </ul>
+<div class="arithmatex">\[
+\chi_{\text{density}} = \frac{\chi}{\texttt{config\_sum}}
+\]</div>
+<p>where <span class="arithmatex">\( \chi \)</span> is the Euler characteristic and <code>config_sum</code> is the sum of all entries in the configuration matrix.</p>
+<ul>
+<li>
+<p><strong>codim</strong>: Codimension of the Calabi–Yau manifold, equal to the number of defining polynomials in the configuration matrix.</p>
+</li>
+<li>
+<p><code>config_sum</code>: Let <span class="arithmatex">\( C = [c_{ij}] \in \mathbb{Z}^{m \times n} \)</span> be the configuration matrix. Then:</p>
+</li>
+</ul>
+<div class="arithmatex">\[
+\texttt{config\_sum} = \sum_{i=1}^{m} \sum_{j=1}^{n} c_{ij}
+\]</div>
 <p><strong>Interpretation.</strong>
-This conjecture posits a nonlinear relationship between geometric complexity and topological asymmetry. When the Hodge structure is unbalanced in favor of complex structure moduli, but this imbalance is not too large relative to the maximum polynomial degree, the defining data tends to be sparse. This reflects a possible geometric signal for detecting algebraically minimal embeddings.</p>
+This conjecture suggests that the square of the Euler characteristic density for a Calabi–Yau threefold grows at least linearly with the codimension of its embedding. This relationship may reflect a geometric constraint on how much topological complexity can be compressed into higher-codimension ambient spaces.</p>
 <p><strong>Discovered by:</strong> <em>TxGraffiti (Vibrations mode)</em></p>
 
 

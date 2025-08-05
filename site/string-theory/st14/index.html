@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../number-theory/nt3/">
+        <link rel="prev" href="../st13/">
       
       
-        <link rel="next" href="../st2/">
+        <link rel="next" href="../../publications/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Conjecture ST.1 - Written on the Wall III (WoW3)</title>
+        <title>Conjecture ST.14 - Written on the Wall III (WoW3)</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#conjecture-st1-hodge-ratio-bound-predicts-sparse-configurations" class="md-skip">
+        <a href="#conjecture-stxx-dominant-hodge-number-lower-bound-via-moduli-density" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Conjecture ST.1
+              Conjecture ST.14
             
           </span>
         </div>
@@ -297,7 +297,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../st1/" class="md-tabs__link">
           
   
   
@@ -979,19 +979,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../st1/" class="md-nav__link">
         
   
   
@@ -1002,7 +993,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1288,10 +1278,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../st14/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1302,6 +1301,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1352,16 +1352,19 @@
 
 
 
-<h1 id="conjecture-st1-hodge-ratio-bound-predicts-sparse-configurations">Conjecture ST.1 — Hodge Ratio Bound Predicts Sparse Configurations<a class="headerlink" href="#conjecture-st1-hodge-ratio-bound-predicts-sparse-configurations" title="Permanent link">&para;</a></h1>
+<h1 id="conjecture-stxx-dominant-hodge-number-lower-bound-via-moduli-density">Conjecture ST.XX — Dominant Hodge Number Lower Bound via Moduli Density<a class="headerlink" href="#conjecture-stxx-dominant-hodge-number-lower-bound-via-moduli-density" title="Permanent link">&para;</a></h1>
 <p><strong>Statement.</strong>
-If the ratio of Hodge numbers satisfies <span class="arithmatex">\(\frac{h^{2,1}}{h^{1,1}} &lt; \frac{38}{11} \cdot \max_{i,j} c_{ij}\)</span>, then the <strong>configuration matrix is sparse</strong>.</p>
+For any Calabi–Yau threefold manifold,</p>
+<div class="arithmatex">\[
+\max(h^{1,1}, h^{2,1}) \geq 6 \cdot \dfrac{h^{1,1} + h^{2,1}}{\sum_{i=1}^{m} \sum_{j=1}^{n} c_{ij}}
+\]</div>
 <p><strong>Definitions.</strong></p>
 <ul>
-<li><span class="arithmatex">\( h^{1,1} \)</span>, <span class="arithmatex">\( h^{2,1} \)</span>: Hodge numbers of the Calabi–Yau threefold, representing the dimensions of the Kähler and complex structure moduli spaces, respectively.</li>
-<li><span class="arithmatex">\( \max_{i,j} c_{ij} \)</span>: The largest entry in the configuration matrix <span class="arithmatex">\( C = [c_{ij}] \)</span>, which encodes the defining polynomials of the complete intersection Calabi–Yau (CICY) manifold.</li>
+<li><span class="arithmatex">\( h^{1,1}, h^{2,1} \)</span>: Hodge numbers of the Calabi–Yau threefold.</li>
+<li><span class="arithmatex">\( \text{moduli\_density} = \dfrac{h^{1,1} + h^{2,1}}{\sum_{i=1}^{m} \sum_{j=1}^{n} c_{ij}} \)</span>: Moduli per unit configuration size.</li>
 </ul>
 <p><strong>Interpretation.</strong>
-This conjecture posits a nonlinear relationship between geometric complexity and topological asymmetry. When the Hodge structure is unbalanced in favor of complex structure moduli, but this imbalance is not too large relative to the maximum polynomial degree, the defining data tends to be sparse. This reflects a possible geometric signal for detecting algebraically minimal embeddings.</p>
+This conjecture posits that having a high density of deformation moduli (relative to the configuration size) necessitates a high value for at least one of the Hodge numbers. In other words, the complexity of the manifold’s shape, as captured by its moduli, cannot be densely packed unless the geometry itself is sufficiently rich in cohomology.</p>
 <p><strong>Discovered by:</strong> <em>TxGraffiti (Vibrations mode)</em></p>
 
 

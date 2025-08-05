@@ -60,6 +60,7 @@ nav:
       - Conjecture NT.2: number-theory/nt2.md
       - Conjecture NT.3: number-theory/nt3.md
   - String Theory:
+      - About: string-theory/about.md
       - Conjecture ST.1: string-theory/st1.md
       - Conjecture ST.2: string-theory/st2.md
       - Conjecture ST.3: string-theory/st3.md

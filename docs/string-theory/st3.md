@@ -9,6 +9,8 @@ $$
 
 and this bound is sharp.
 
+> **Status:** <span class="badge status-open">Open</span>
+
 **Definitions.**
 
 - \( h^{1,1} \), \( h^{2,1} \): Hodge numbers of the Calabi–Yau threefold, representing the dimensions of the Kähler and complex structure moduli spaces, respectively.

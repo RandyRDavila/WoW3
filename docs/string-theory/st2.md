@@ -4,6 +4,8 @@
 
 If $\chi_{\text{density}} > \frac{1}{50} h^{1,1} \cdot h^{2,1} - \frac{229}{50}$, then the manifold is **mirror symmetric**, (i.e., \( h^{1,1} = h^{2,1} \)).
 
+> **Status:** <span class="badge status-open">Open</span>
+
 **Interpretation.**
 This inequality links a *density-normalized topological invariant* to a *symmetry property of the moduli space*. It identifies mirror symmetry through a nonlinear interaction term \( h^{1,1} \cdot h^{2,1} \).
 

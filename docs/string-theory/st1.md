@@ -3,6 +3,8 @@
 **Statement.**
 If the ratio of Hodge numbers satisfies $\frac{h^{2,1}}{h^{1,1}} < \frac{38}{11} \cdot \max_{i,j} c_{ij}$, then the **configuration matrix is sparse**.
 
+> **Status:** <span class="badge status-open">Open</span>
+
 **Definitions.**
 
 - \( h^{1,1} \), \( h^{2,1} \): Hodge numbers of the Calabi–Yau threefold, representing the dimensions of the Kähler and complex structure moduli spaces, respectively.

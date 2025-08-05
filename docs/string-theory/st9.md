@@ -1,11 +1,15 @@
 # Conjecture ST.9 — Configuration Volume Bounds Hodge Imbalance
 
 **Statement.**
-If a Calabi–Yau threefold is a valid manifold, then:
+If a Calabi–Yau threefold is a valid manifold, then
 
 $$
-h^{1,1} - h^{2,1} \geq \frac{1}{4} \cdot \sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} c_{ij} - 8
+h^{1,1} - h^{2,1} \geq \frac{1}{4} \cdot \sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} c_{ij} - 8,
 $$
+
+and this bound is sharp.
+
+> **Status:** <span class="badge status-open">Open</span>
 
 **Definitions.**
 

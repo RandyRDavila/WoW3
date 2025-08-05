@@ -9,6 +9,8 @@ $$
 
 and this bound is sharp.
 
+> **Status:** <span class="badge status-open">Open</span>
+
 **Definitions.**
 
 - \( \chi \): Euler characteristic of the Calabi–Yau threefold, defined as \( \chi = 2(h^{1,1} - h^{2,1}) \).

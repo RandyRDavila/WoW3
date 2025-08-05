@@ -1,11 +1,15 @@
 # Conjecture ST.5 — Mirror Symmetry Implies Entry Bound from Total Moduli
 
 **Statement.**
-If a Calabi–Yau threefold is **mirror symmetric**, then:
+If a Calabi–Yau threefold is **mirror symmetric**, then
 
 $$
-\max_{i,j}c_{ij} \geq -\frac{1}{30}\cdot(h^{1,1} + h^{2,1}) + 2
+\max_{i,j}c_{ij} \geq -\frac{1}{30}\cdot(h^{1,1} + h^{2,1}) + 2,
 $$
+
+and this bound is sharp.
+
+> **Status:** <span class="badge status-open">Open</span>
 
 **Definitions.**
 

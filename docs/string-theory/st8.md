@@ -1,11 +1,15 @@
 # Conjecture ST.8 — Nonzero Density Controls Hodge Imbalance
 
 **Statement.**
-If a Calabi–Yau threefold is a valid manifold, then:
+If a Calabi–Yau threefold is a valid manifold, then
 
 $$
-h^{1,1} - h^{2,1} \geq \frac{1}{2} \cdot \sum_{i=1}^{m} \sum_{j=1}^{n} \delta(c_{ij}) - 9
+h^{1,1} - h^{2,1} \geq \frac{1}{2} \cdot \sum_{i=1}^{m} \sum_{j=1}^{n} \delta(c_{ij}) - 9,
 $$
+
+and this bound is sharp.
+
+> **Status:** <span class="badge status-open">Open</span>
 
 **Definitions.**
 

@@ -4,8 +4,12 @@
 If a Calabi–Yau threefold is a valid manifold, then the Hodge number difference satisfies:
 
 $$
-h^{1,1} - h^{2,1} \geq 2 \cdot \mathrm{rank}(C) - 18
+h^{1,1} - h^{2,1} \geq 2 \cdot \mathrm{rank}(C) - 18,
 $$
+
+and this bound is sharp.
+
+> **Status:** <span class="badge status-open">Open</span>
 
 **Definitions.**
 

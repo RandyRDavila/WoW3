@@ -4,8 +4,12 @@
 If a Calabi–Yau manifold lies at a conifold point in the moduli space, then the maximum entry in its configuration matrix satisfies the inequality:
 
 $$
-\max_{i,j}c_{ij}\geq \frac{1}{9} \cdot n
+\max_{i,j}c_{ij}\geq \frac{1}{9} \cdot n,
 $$
+
+and this bound is sharp
+
+> **Status:** <span class="badge status-open">Open</span>
 
 **Definitions.**
 

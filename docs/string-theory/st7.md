@@ -9,7 +9,8 @@ $$
 
 and this bound is sharp.
 
-> **Status:** <span class="badge status-open">Open</span>
+> **Status:** <span class="badge status-refuted">False</span>
+A counterexample to this conjecture was found by Per Berglund on 05Aug2025: CICY, [4||5], the quintic, with $h_{1,1}=1$ and $h_{2,1}=101$, is a counterexample to ST.7.
 
 **Definitions.**
 

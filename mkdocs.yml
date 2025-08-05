@@ -44,21 +44,25 @@ nav:
   - Home: index.md
   - About: about.md
   - Graph Theory:
-      - Necessary Conjectures:
-          - Conjecture GT.1: graph-theory/gt1.md
-          - Conjecture GT.2: graph-theory/gt2.md
-          - Conjecture GT.3: graph-theory/gt3.md
-          - Conjecture GT.4: graph-theory/gt4.md
-          - Conjecture GT.5: graph-theory/gt5.md
-          - Conjecture GT.6: graph-theory/gt6.md
-          - Conjecture GT.7: graph-theory/gt7.md
-          - Conjecture GT.8: graph-theory/gt8.md
-          - Conjecture GT.9: graph-theory/gt9.md
-          - Conjecture GT.10: graph-theory/gt10.md
+      - Conjecture GT.1: graph-theory/gt1.md
+      - Conjecture GT.2: graph-theory/gt2.md
+      - Conjecture GT.3: graph-theory/gt3.md
+      - Conjecture GT.4: graph-theory/gt4.md
+      - Conjecture GT.5: graph-theory/gt5.md
+      - Conjecture GT.6: graph-theory/gt6.md
+      - Conjecture GT.7: graph-theory/gt7.md
+      - Conjecture GT.8: graph-theory/gt8.md
+      - Conjecture GT.9: graph-theory/gt9.md
+      - Conjecture GT.10: graph-theory/gt10.md
   - Number Theory:
       - Conjecture NT.1: number-theory/nt1.md
       - Conjecture NT.2: number-theory/nt2.md
       - Conjecture NT.3: number-theory/nt3.md
+      - Conjecture NT.4: number-theory/nt4.md
+      - Conjecture NT.5: number-theory/nt5.md
+      - Conjecture NT.6: number-theory/nt6.md
+      - Conjecture NT.7: number-theory/nt7.md
+      - Conjecture NT.8: number-theory/nt8.md
   - String Theory:
       - About: string-theory/about.md
       - Conjecture ST.1: string-theory/st1.md

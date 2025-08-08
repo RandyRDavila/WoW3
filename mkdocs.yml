@@ -55,6 +55,7 @@ nav:
       - Conjecture GT.9: graph-theory/gt9.md
       - Conjecture GT.10: graph-theory/gt10.md
   - Number Theory:
+      - Conjecture NT.0: number-theory/nt0.md
       - Conjecture NT.1: number-theory/nt1.md
       - Conjecture NT.2: number-theory/nt2.md
       - Conjecture NT.3: number-theory/nt3.md

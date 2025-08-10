@@ -9,7 +9,7 @@ $$
 $$
 Moreover, the residuals
 $$
-\pi(n) - \big(\alpha\,R(G_n) + \beta\big)
+\pi(n) - \alpha\,R(G_n)
 $$
 
 are integer-valued for long contiguous intervals of \(n\) and increase by exactly \(+1\) at discrete breakpoints — a phenomenon we call the **staircase law**.

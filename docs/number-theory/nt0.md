@@ -3,7 +3,7 @@
 **Conjecture.**
 Let \(G_n\) be the non-coprime graph on vertices \(\{2,3,\dots,n\}\), with edges between \(u,v\) whenever \(\gcd(u,v) > 1\).
 Let \(R(G_n)\) denote its Havel–Hakimi residue. There exist constants
-$\lambda \approx 2.9816$ and $\beta \approx -5.852$, such that for all \(n \ge 2\),
+$\alpha \approx 2.9816$ and $\beta \approx -5.852$, such that for all \(n \ge 2\),
 $$
 \pi(n) \sim \alpha\,R(G_n) + \beta,
 $$

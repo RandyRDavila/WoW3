@@ -33,4 +33,4 @@ This prompted a deeper investigation, revealing a highly accurate global linear 
 
 ## Implications
 
-Under a slight assumption on the behavior of this conjecture, we note that assumping this conjecture true implies the Riemann Hypothesis.
+Under a slight assumption on the behavior of this conjecture, we note that assumming this conjecture true implies the Riemann Hypothesis.

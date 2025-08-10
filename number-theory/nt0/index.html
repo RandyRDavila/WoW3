@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#prime-residue-graph-conjectures" class="md-skip">
+        <a href="#conjecture-linear-residue-law-for-the-non-coprime-graph" class="md-skip">
           Skip to content
         </a>
       
@@ -852,27 +852,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#conjecture-1-structured-recursive-rule-for-cn" class="md-nav__link">
+  <a href="#method-of-discovery" class="md-nav__link">
     <span class="md-ellipsis">
-      Conjecture 1: Structured Recursive Rule for \(C(n)\)
+      Method of Discovery
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conjecture-2-asymptotic-behavior" class="md-nav__link">
+  <a href="#numerical-evidence" class="md-nav__link">
     <span class="md-ellipsis">
-      Conjecture 2: Asymptotic Behavior
+      Numerical Evidence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Numerical Evidence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-scatterplot-with-linear-fit-and-residual-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Scatterplot with Linear Fit and Residual Range
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#interpretation" class="md-nav__link">
+  <a href="#implications" class="md-nav__link">
     <span class="md-ellipsis">
-      Interpretation
+      Implications
     </span>
   </a>
   
@@ -1511,53 +1526,31 @@
 
 
 
-<h1 id="prime-residue-graph-conjectures">Prime-Residue Graph Conjectures<a class="headerlink" href="#prime-residue-graph-conjectures" title="Permanent link">&para;</a></h1>
-<p>This page presents two conjectures relating the classical prime-counting function <span class="arithmatex">\(\pi(n)\)</span> to the structure of the <strong>Fajtlowicz graph</strong> <span class="arithmatex">\(G_n\)</span>, defined as follows:</p>
-<ul>
-<li>Let <span class="arithmatex">\(G_n\)</span> be the graph with vertex set <span class="arithmatex">\(\{2, 3, \dots, n\}\)</span>.</li>
-<li>An edge connects <span class="arithmatex">\(u\)</span> and <span class="arithmatex">\(v\)</span> if and only if <span class="arithmatex">\(\gcd(u, v) \ne 1\)</span>.</li>
-<li>Let <span class="arithmatex">\(R(G_n)\)</span> denote the <strong>Havel–Hakimi residue</strong> of <span class="arithmatex">\(G_n\)</span>.</li>
-</ul>
-<p>Then <span class="arithmatex">\(\pi(n)\)</span> can be exactly expressed as:
+<h1 id="conjecture-linear-residue-law-for-the-non-coprime-graph">Conjecture: Linear Residue Law for the Non-Coprime Graph<a class="headerlink" href="#conjecture-linear-residue-law-for-the-non-coprime-graph" title="Permanent link">&para;</a></h1>
+<p><strong>Conjecture.</strong>
+Let <span class="arithmatex">\(G_n\)</span> be the non-coprime graph on vertices <span class="arithmatex">\(\{2,3,\dots,n\}\)</span>, with edges between <span class="arithmatex">\(u,v\)</span> whenever <span class="arithmatex">\(\gcd(u,v) &gt; 1\)</span>.
+Let <span class="arithmatex">\(R(G_n)\)</span> denote its Havel–Hakimi residue. There exist constants
+<span class="arithmatex">\(\lambda \approx 2.9816\)</span> and <span class="arithmatex">\(\beta \approx -5.852\)</span>, such that for all <span class="arithmatex">\(n \ge 2\)</span>,
 $$
-\pi(n) = R(G_n) + C(n),
+\pi(n) \sim \alpha\,R(G_n) + \beta,
 $$
-where <span class="arithmatex">\(C(n)\)</span> is a nonnegative integer-valued correction term.</p>
-<hr />
-<h2 id="conjecture-1-structured-recursive-rule-for-cn">Conjecture 1: Structured Recursive Rule for <span class="arithmatex">\(C(n)\)</span><a class="headerlink" href="#conjecture-1-structured-recursive-rule-for-cn" title="Permanent link">&para;</a></h2>
-<p>We define a recursive sequence of threshold values <span class="arithmatex">\((f(t))\)</span> based on a rule:</p>
-<ul>
-<li>Start with <span class="arithmatex">\(a_1 = 4\)</span>.</li>
-<li>For each integer <span class="arithmatex">\(m \ge 1\)</span>, insert <span class="arithmatex">\(m+3\)</span> copies of 2 followed by a single value <span class="arithmatex">\(m+4\)</span>.</li>
-<li>That is,
-  $$
-  a = [4,\ 2,\ 2,\ 2,\ 5,\ 2,\ 2,\ 2,\ 2,\ 6,\ 2,\dots]
-  $$</li>
-</ul>
-<p>Define:</p>
-<div class="arithmatex">\[
-f(t) = \sum_{i=1}^{t} a_i.
-\]</div>
-<p>Then we conjecture:</p>
-<div class="arithmatex">\[
-C(n) = \max \left\{ t \in \mathbb{Z}_{\ge 0} \;\middle|\; \pi(n) \ge f(t) \right\}.
-\]</div>
-<p>This means that <span class="arithmatex">\(C(n)\)</span> increases each time the number of primes less than or equal to <span class="arithmatex">\(n\)</span> passes the next threshold in the sequence <span class="arithmatex">\(f(t)\)</span>.</p>
-<hr />
-<h2 id="conjecture-2-asymptotic-behavior">Conjecture 2: Asymptotic Behavior<a class="headerlink" href="#conjecture-2-asymptotic-behavior" title="Permanent link">&para;</a></h2>
-<p>We further conjecture that:
+Moreover, the residuals
 $$
-\pi(n) \sim R(G_n) + \log\log n \quad \text{as } n \to \infty.
+\pi(n) - \big(\alpha\,R(G_n) + \beta\big)
 $$</p>
-<p>This suggests that the Havel–Hakimi residue <span class="arithmatex">\(R(G_n)\)</span> gives a graph-theoretic approximation to the prime-counting function, and the error term <span class="arithmatex">\(C(n)\)</span> grows like <span class="arithmatex">\(\log\log n\)</span>.</p>
+<p>are integer-valued for long contiguous intervals of <span class="arithmatex">\(n\)</span> and increase by exactly <span class="arithmatex">\(+1\)</span> at discrete breakpoints — a phenomenon we call the <strong>staircase law</strong>.</p>
 <hr />
-<h2 id="interpretation">Interpretation<a class="headerlink" href="#interpretation" title="Permanent link">&para;</a></h2>
-<p>These conjectures offer a new decomposition of <span class="arithmatex">\(\pi(n)\)</span> into:</p>
-<ul>
-<li>A structured, computable <strong>graph-theoretic component</strong> <span class="arithmatex">\(R(G_n)\)</span>,</li>
-<li>A slow-growing, <strong>recursively defined arithmetic correction</strong> <span class="arithmatex">\(C(n)\)</span>.</li>
-</ul>
-<p>This creates a novel connection between number theory and extremal graph theory, and suggests a new direction for understanding the distribution of primes through the lens of discrete structures.</p>
+<h2 id="method-of-discovery">Method of Discovery<a class="headerlink" href="#method-of-discovery" title="Permanent link">&para;</a></h2>
+<p>This conjecture was uncovered autonomously by the AI-driven conjecturing system <strong>TxGraffiti</strong>.
+Initially, TxGraffiti was tasked with finding bounds on <span class="arithmatex">\(\alpha(G_n)\)</span> (equivalently <span class="arithmatex">\(\pi(n)\)</span>) in terms of <span class="arithmatex">\(R(G_n)\)</span> for <span class="arithmatex">\(2 \le n \le 100\)</span>.
+Through its knowledge-removal loop, it rediscovered the classical bound <span class="arithmatex">\(\alpha(G_n) \ge R(G_n)\)</span> and then exposed the staircase structure in the difference <span class="arithmatex">\(\pi(n) - R(G_n)\)</span>.
+This prompted a deeper investigation, revealing a highly accurate global linear relation between <span class="arithmatex">\(\pi(n)\)</span> and <span class="arithmatex">\(R(G_n)\)</span> with a slope and intercept stable across the tested range.</p>
+<hr />
+<h2 id="numerical-evidence">Numerical Evidence<a class="headerlink" href="#numerical-evidence" title="Permanent link">&para;</a></h2>
+<h3 id="1-scatterplot-with-linear-fit-and-residual-range">1. Scatterplot with Linear Fit and Residual Range<a class="headerlink" href="#1-scatterplot-with-linear-fit-and-residual-range" title="Permanent link">&para;</a></h3>
+<p><img alt="pi_vs_residue_fit" src="../pi_vs_residue_with_inset.png" /></p>
+<h2 id="implications">Implications<a class="headerlink" href="#implications" title="Permanent link">&para;</a></h2>
+<p>Under a slight assumption on the behavior of this conjecture, we note that assumping this conjecture true implies the Riemann Hypothesis.</p>
 
 
 

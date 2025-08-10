@@ -1,62 +1,36 @@
-# Prime-Residue Graph Conjectures
+# Conjecture: Linear Residue Law for the Non-Coprime Graph
 
-This page presents two conjectures relating the classical prime-counting function $\pi(n)$ to the structure of the **Fajtlowicz graph** $G_n$, defined as follows:
-
-- Let $G_n$ be the graph with vertex set $\{2, 3, \dots, n\}$.
-- An edge connects $u$ and $v$ if and only if $\gcd(u, v) \ne 1$.
-- Let $R(G_n)$ denote the **Havel–Hakimi residue** of $G_n$.
-
-Then $\pi(n)$ can be exactly expressed as:
+**Conjecture.**
+Let \(G_n\) be the non-coprime graph on vertices \(\{2,3,\dots,n\}\), with edges between \(u,v\) whenever \(\gcd(u,v) > 1\).
+Let \(R(G_n)\) denote its Havel–Hakimi residue. There exist constants
+$\lambda \approx 2.9816$ and $\beta \approx -5.852$, such that for all \(n \ge 2\),
 $$
-\pi(n) = R(G_n) + C(n),
+\pi(n) \sim \alpha\,R(G_n) + \beta,
 $$
-where $C(n)$ is a nonnegative integer-valued correction term.
+Moreover, the residuals
+$$
+\pi(n) - \big(\alpha\,R(G_n) + \beta\big)
+$$
+
+are integer-valued for long contiguous intervals of \(n\) and increase by exactly \(+1\) at discrete breakpoints — a phenomenon we call the **staircase law**.
 
 ---
 
-## Conjecture 1: Structured Recursive Rule for $C(n)$
+## Method of Discovery
 
-We define a recursive sequence of threshold values $(f(t))$ based on a rule:
-
-- Start with $a_1 = 4$.
-- For each integer $m \ge 1$, insert $m+3$ copies of 2 followed by a single value $m+4$.
-- That is,
-  $$
-  a = [4,\ 2,\ 2,\ 2,\ 5,\ 2,\ 2,\ 2,\ 2,\ 6,\ 2,\dots]
-  $$
-
-Define:
-
-$$
-f(t) = \sum_{i=1}^{t} a_i.
-$$
-
-Then we conjecture:
-
-$$
-C(n) = \max \left\{ t \in \mathbb{Z}_{\ge 0} \;\middle|\; \pi(n) \ge f(t) \right\}.
-$$
-
-This means that $C(n)$ increases each time the number of primes less than or equal to $n$ passes the next threshold in the sequence $f(t)$.
+This conjecture was uncovered autonomously by the AI-driven conjecturing system **TxGraffiti**.
+Initially, TxGraffiti was tasked with finding bounds on \(\alpha(G_n)\) (equivalently \(\pi(n)\)) in terms of \(R(G_n)\) for \(2 \le n \le 100\).
+Through its knowledge-removal loop, it rediscovered the classical bound \(\alpha(G_n) \ge R(G_n)\) and then exposed the staircase structure in the difference \(\pi(n) - R(G_n)\).
+This prompted a deeper investigation, revealing a highly accurate global linear relation between \(\pi(n)\) and \(R(G_n)\) with a slope and intercept stable across the tested range.
 
 ---
 
-## Conjecture 2: Asymptotic Behavior
+## Numerical Evidence
 
-We further conjecture that:
-$$
-\pi(n) \sim R(G_n) + \log\log n \quad \text{as } n \to \infty.
-$$
+### 1. Scatterplot with Linear Fit and Residual Range
 
-This suggests that the Havel–Hakimi residue $R(G_n)$ gives a graph-theoretic approximation to the prime-counting function, and the error term $C(n)$ grows like $\log\log n$.
+![pi_vs_residue_fit](pi_vs_residue_with_inset.png)
 
----
+## Implications
 
-## Interpretation
-
-These conjectures offer a new decomposition of $\pi(n)$ into:
-
-- A structured, computable **graph-theoretic component** $R(G_n)$,
-- A slow-growing, **recursively defined arithmetic correction** $C(n)$.
-
-This creates a novel connection between number theory and extremal graph theory, and suggests a new direction for understanding the distribution of primes through the lens of discrete structures.
+Under a slight assumption on the behavior of this conjecture, we note that assumping this conjecture true implies the Riemann Hypothesis.

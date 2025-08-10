@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../../graph-theory/gt10/">
+      
+      
+        <link rel="next" href="../nt1/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Conjecture 001: Goldbach Gap Bound - Written on the Wall III (WoW3)</title>
+        <title>Conjecture NT.0 - Written on the Wall III (WoW3)</title>
       
     
     
@@ -72,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#conjecture-001-goldbach-gap-bound" class="md-skip">
+        <a href="#prime-residue-graph-conjectures" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Conjecture 001: Goldbach Gap Bound
+              Conjecture NT.0
             
           </span>
         </div>
@@ -257,11 +261,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../nt1/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -745,26 +751,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -777,12 +788,104 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Number Theory
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Conjecture NT.0
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conjecture NT.0
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conjecture-1-structured-recursive-rule-for-cn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conjecture 1: Structured Recursive Rule for \(C(n)\)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conjecture-2-asymptotic-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conjecture 2: Asymptotic Behavior
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpretation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
             
               
                 
@@ -1408,12 +1511,53 @@
 
 
 
-<h1 id="conjecture-001-goldbach-gap-bound">Conjecture 001: Goldbach Gap Bound<a class="headerlink" href="#conjecture-001-goldbach-gap-bound" title="Permanent link">&para;</a></h1>
-<p><strong>Statement:</strong><br />
-Let <span class="arithmatex">\( n \)</span> be an even integer <span class="arithmatex">\( \geq 6 \)</span>. Define the <strong>Goldbach gap</strong> <span class="arithmatex">\( g(n) \)</span> as the smallest difference between two primes that sum to <span class="arithmatex">\( n \)</span>. Then:<br />
-[
-g(n) \leq \sqrt{n}
-]</p>
+<h1 id="prime-residue-graph-conjectures">Prime-Residue Graph Conjectures<a class="headerlink" href="#prime-residue-graph-conjectures" title="Permanent link">&para;</a></h1>
+<p>This page presents two conjectures relating the classical prime-counting function <span class="arithmatex">\(\pi(n)\)</span> to the structure of the <strong>Fajtlowicz graph</strong> <span class="arithmatex">\(G_n\)</span>, defined as follows:</p>
+<ul>
+<li>Let <span class="arithmatex">\(G_n\)</span> be the graph with vertex set <span class="arithmatex">\(\{2, 3, \dots, n\}\)</span>.</li>
+<li>An edge connects <span class="arithmatex">\(u\)</span> and <span class="arithmatex">\(v\)</span> if and only if <span class="arithmatex">\(\gcd(u, v) \ne 1\)</span>.</li>
+<li>Let <span class="arithmatex">\(R(G_n)\)</span> denote the <strong>Havel–Hakimi residue</strong> of <span class="arithmatex">\(G_n\)</span>.</li>
+</ul>
+<p>Then <span class="arithmatex">\(\pi(n)\)</span> can be exactly expressed as:
+$$
+\pi(n) = R(G_n) + C(n),
+$$
+where <span class="arithmatex">\(C(n)\)</span> is a nonnegative integer-valued correction term.</p>
+<hr />
+<h2 id="conjecture-1-structured-recursive-rule-for-cn">Conjecture 1: Structured Recursive Rule for <span class="arithmatex">\(C(n)\)</span><a class="headerlink" href="#conjecture-1-structured-recursive-rule-for-cn" title="Permanent link">&para;</a></h2>
+<p>We define a recursive sequence of threshold values <span class="arithmatex">\((f(t))\)</span> based on a rule:</p>
+<ul>
+<li>Start with <span class="arithmatex">\(a_1 = 4\)</span>.</li>
+<li>For each integer <span class="arithmatex">\(m \ge 1\)</span>, insert <span class="arithmatex">\(m+3\)</span> copies of 2 followed by a single value <span class="arithmatex">\(m+4\)</span>.</li>
+<li>That is,
+  $$
+  a = [4,\ 2,\ 2,\ 2,\ 5,\ 2,\ 2,\ 2,\ 2,\ 6,\ 2,\dots]
+  $$</li>
+</ul>
+<p>Define:</p>
+<div class="arithmatex">\[
+f(t) = \sum_{i=1}^{t} a_i.
+\]</div>
+<p>Then we conjecture:</p>
+<div class="arithmatex">\[
+C(n) = \max \left\{ t \in \mathbb{Z}_{\ge 0} \;\middle|\; \pi(n) \ge f(t) \right\}.
+\]</div>
+<p>This means that <span class="arithmatex">\(C(n)\)</span> increases each time the number of primes less than or equal to <span class="arithmatex">\(n\)</span> passes the next threshold in the sequence <span class="arithmatex">\(f(t)\)</span>.</p>
+<hr />
+<h2 id="conjecture-2-asymptotic-behavior">Conjecture 2: Asymptotic Behavior<a class="headerlink" href="#conjecture-2-asymptotic-behavior" title="Permanent link">&para;</a></h2>
+<p>We further conjecture that:
+$$
+\pi(n) \sim R(G_n) + \log\log n \quad \text{as } n \to \infty.
+$$</p>
+<p>This suggests that the Havel–Hakimi residue <span class="arithmatex">\(R(G_n)\)</span> gives a graph-theoretic approximation to the prime-counting function, and the error term <span class="arithmatex">\(C(n)\)</span> grows like <span class="arithmatex">\(\log\log n\)</span>.</p>
+<hr />
+<h2 id="interpretation">Interpretation<a class="headerlink" href="#interpretation" title="Permanent link">&para;</a></h2>
+<p>These conjectures offer a new decomposition of <span class="arithmatex">\(\pi(n)\)</span> into:</p>
+<ul>
+<li>A structured, computable <strong>graph-theoretic component</strong> <span class="arithmatex">\(R(G_n)\)</span>,</li>
+<li>A slow-growing, <strong>recursively defined arithmetic correction</strong> <span class="arithmatex">\(C(n)\)</span>.</li>
+</ul>
+<p>This creates a novel connection between number theory and extremal graph theory, and suggests a new direction for understanding the distribution of primes through the lens of discrete structures.</p>
 
 
 

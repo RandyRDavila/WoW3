@@ -3,7 +3,7 @@
 **Conjecture.**
 Let \(G_n\) be the non-coprime graph on vertices \(\{2,3,\dots,n\}\), with edges between \(u,v\) whenever \(\gcd(u,v) > 1\).
 Let \(R(G_n)\) denote its Havel–Hakimi residue. There exist constants
-$\alpha = 3$ and $\beta \approx \log(\log(n)))$, such that for all \(n \ge 2\),
+$\alpha = 3$ and $\beta \approx \sqrt{n}\log(n)$, such that for all \(n \ge 2\),
 $$
 \pi(n) \sim \alpha\,R(G_n) + \beta,
 $$
@@ -13,6 +13,8 @@ $$
 $$
 
 are integer-valued for long contiguous intervals of \(n\) and increase by exactly \(+1\) at discrete breakpoints — a phenomenon we call the **staircase law**.
+
+**Note.** This conjecture has been tested up to $n=10^5$.
 
 ---
 

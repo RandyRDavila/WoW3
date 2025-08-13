@@ -32,11 +32,7 @@ sorry
 
 - A **connected dominating set** of a graph $G$ is a dominating set $D \subseteq V(G)$ such that the subgraph induced by $D$ is connected. The **connected domination number**, denoted by $\gamma_c(G)$, is the minimum cardinality of such a set.
 
-- The **triameter** of a graph $G$, denoted by $\operatorname{tri}(G)$, is defined as:
-  $$
-  \operatorname{tri}(G) = \max \{ d(u,v) + d(v,w) + d(u,w) : u,v,w \in V(G) \},
-  $$
-  where $d(u,v)$ denotes the shortest-path distance between $u$ and $v$ in $G$.
+- The **triameter** of a graph $G$, denoted by $\operatorname{tri}(G)$, is defined $\operatorname{tri}(G) = \max \{ d(u,v) + d(v,w) + d(u,w) : u,v,w \in V(G) \}$, where $d(u,v)$ denotes the shortest-path distance between $u$ and $v$ in $G$.
 
 ## Equality Cases
 

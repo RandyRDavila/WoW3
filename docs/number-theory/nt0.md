@@ -2,9 +2,9 @@
 
 **Conjecture.**
 Let \(G_n\) be the non-coprime graph on vertices \(\{2,3,\dots,n\}\), with edges between \(u,v\) whenever \(\gcd(u,v) > 1\).
-Let \(R(G_n)\) denote its Havel–Hakimi residue. If $\alpha = 3$ and $\beta \approx \sqrt{n}\log(n)$, such that for all \(n \ge 2\),
+If \(R(G_n)\) denotes its Havel–Hakimi residue, then
 $$
-\pi(n) \sim \alpha\,R(G_n) + \beta,
+\pi(n) \sim \alpha\,R(G_n) + \sqrt{n}\log(n),
 $$
 Moreover, the residuals
 $$

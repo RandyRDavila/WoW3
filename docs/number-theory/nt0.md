@@ -4,11 +4,11 @@
 Let \(G_n\) be the non-coprime graph on vertices \(\{2,3,\dots,n\}\), with edges between \(u,v\) whenever \(\gcd(u,v) > 1\).
 If \(R(G_n)\) denotes its Havel–Hakimi residue, then
 $$
-\pi(n) \sim \alpha\,R(G_n) + \sqrt{n}\log(n),
+\pi(n) \sim 3\,R(G_n) + \sqrt{n}\log(n),
 $$
 Moreover, the residuals
 $$
-\pi(n) - \alpha\,R(G_n)
+\pi(n) - R(G_n)
 $$
 
 are integer-valued for long contiguous intervals of \(n\) and increase by exactly \(+1\) at discrete breakpoints — a phenomenon we call the **staircase law**.
